@@ -95,9 +95,8 @@ class ActionPlugin {
             $result = $this->resultFactory->create(ResultFactory::TYPE_REDIRECT);
             $result->setUrl($this->customerUrl->getLoginUrl());
             return $result;
-        }else{
-            return $proceed();
         }
+        return $proceed();
     }
 
     /**
