@@ -106,7 +106,6 @@ class ActionPlugin {
      */
     public function isActionAllowed(): bool
     {   
-        
         $action = strtolower($this->request->getFullActionName());
         $allowedActions = $this->getAllowedActions->execute();
         if(in_array($action, $allowedActions))
