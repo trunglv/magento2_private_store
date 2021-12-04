@@ -20,12 +20,12 @@ class ActionPlugin {
     /**
      * @var Session
      */
-    private $session;
+    protected $session;
 
     /**
      * @var Request;
      */
-    private $request;
+    protected $request;
 
     /**
      * @var GetAllowedActions
