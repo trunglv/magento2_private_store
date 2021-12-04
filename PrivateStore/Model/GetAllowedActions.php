@@ -41,7 +41,6 @@ class GetAllowedActions {
         $this->allowedActionsFromDiConfig = $allowedActionsFromDiConfig;
     }
     
-
     /**
      * Get all allowed actions
      *
