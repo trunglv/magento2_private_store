@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+
+        <tab id="betagento" translate="label" class="betageno_module" sortOrder="10">
+            <label>Betagento</label>
+        </tab>
+
+        <section id="betagento_private_stores" showInDefault="1" showInWebsite="0" showInStore="1" sortOrder="10" translate="label">
+            <label>Private Shop</label>
+            <tab>betagento</tab>
+            <resource>Betagento_PrivateStore::configuration</resource>
+
+            <group id="general" translate="label comment" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="1">
+                <label>General</label>
+                <comment></comment>
+
+                <field id="enabled" translate="label" sortOrder="10" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <!-- 
+                <field id="allowed_ip" translate="label comment" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Allowed IPs</label>
+                    <comment></comment>
+                </field>
+                -->
+
+            </group>
+
+            <group id="allowed_pages" translate="label comment" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="1">
+
+                <field id="allowed_cms_page" translate="label" sortOrder="10" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Cms Page</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+                <field id="allowed_category_page" translate="label" sortOrder="10" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Category page</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+                <field id="allowed_product_page" translate="label" sortOrder="10" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Category page</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+                <field id="customs" translate="label comment" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1" type="textarea">
+                    <label>Your customizations for 3rd extensions</label>
+                    <comment>
+                        <![CDATA[ 
+                            One line for one router define. Example : <frontend_name>/<controller>/<action>
+                        ]]>
+                    </comment>
+                </field>
+
+            </group>
+        </section>
+
+    </system>
+</config>
