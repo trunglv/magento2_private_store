@@ -2,7 +2,6 @@
 namespace Betagento\PrivateStore\Model;
 
 class Constant {
-
     const XML_PATH_ENABLE = 'betagento_private_stores/general/enabled';
     const XML_PATH_ALLOWED_IPS = 'betagento_private_stores/general/allowed_ip';
     const XML_PATH_IS_ALLOWED_CMS_PAGE = 'betagento_private_stores/allowed_pages/allowed_cms_page';
