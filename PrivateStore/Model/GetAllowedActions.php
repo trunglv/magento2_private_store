@@ -63,9 +63,6 @@ class GetAllowedActions {
         if(PrivateStoreConfig::getConfigValue(Constant::XML_PATH_IS_ALLOWED_CMS_PAGE)){
             $allowedActions[] = 'cms_index_index';
         }
-        if(PrivateStoreConfig::getConfigValue(Constant::XML_PATH_IS_ALLOWED_CMS_PAGE)){
-            $allowedActions[] = 'cms_index_index';
-        }
         return $this->_allowedActions = $allowedActions;
     }
 }
