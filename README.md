@@ -4,7 +4,10 @@ This extension helps you setup a website for only registered accounts. So guests
 ## Configuration
 ![image](https://user-images.githubusercontent.com/820411/144697589-f4bf9658-154b-4e09-9b33-875c4269fb30.png)
 
-
+## Installation:
+```
+composer require betagento/magento2-private-store:dev-main
+```
 
 
 # Code standard:
